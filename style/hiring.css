@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* background-color: #b5e2e8; */
+    background: url("../Images/career/back.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 300vh; */
+}
+
+
+
+.head{
+    text-align: center;
+}
+
+.head img{
+    width:600px;
+}
+
+
+@media screen and (max-width:750px) {
+    .head img{
+        width: 500px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .head img{
+        width:370px;
+    }
+    
+}
+@media screen and (max-width:430px) {
+    .head img{
+        width:250px;
+    }
+    
+}
+
+.flex-box{
+
+    margin-top: 25px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.left-side img{
+    width: 300px;
+    
+}
+
+
+.right-side{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+   text-align: justify;
+    position: relative;
+}
+
+.right-side h3{
+    /* color: rgb(255, 191, 0); */
+}
+
+.right-side a{
+   
+    position:absolute;
+    right: 10px;
+}
+
+/* ******************* form ************************* */
+
+.form{
+    background-color: #2484aa;
+    margin: auto;
+    width: 480px;
+    border-radius: 13px;
+    position: relative;
+}
+
+form{
+  
+    /* padding-left: 80px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+   
+    
+}
+
+form hr{
+    width: 70%;
+    margin: auto;
+}
+.element{
+    margin-top: 14px;
+   /* margin-left: 30px; */
+   /* padding-left: 70px; */
+   
+}
+
+.form h3{
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+label{
+    width: 90px;
+    font-size: 1.1rem;
+}
+
+#resume-label{
+    width: 90px;
+}
+
+input{
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgb(207, 238, 251);
+    padding:4px 10px;
+
+}
+
+input[type ="file"]{
+    /* background-color: rgb(138, 206, 233) !important; */
+    font-size: 15px !important;
+    /* margin-left: 20px; */
+    width: 220px;
+    color: black;
+    padding: auto !important;
+
+}
+
+.button{
+   text-align: center;
+}
+.form button{
+    margin-left: 10px !important;
+    margin-top: 10px;
+    
+}
+
+.element small{
+    display: block;
+    margin-left: 100px;
+}
+
+ul{
+    margin-bottom: 5px !important;
+}
+.mt{
+    margin-top:50px;
+}
+
+.stars{
+    text-align: center;
+}
+.star-yellow{
+    margin-top: 10px;
+    width: 40px;
+}
+
+.red{
+    position: absolute;
+    top: 980px;
+    left: 50px;
+}
+
+.red img{
+    width: 50px;
+}
+   
+
+@media screen and (max-width:1280px) {
+    .right-side {
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:1280px) {
+    .right-side {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .right-side{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .form{
+        width: 70vw;
+    }
+}
+
+.image-button {
+    width: 180px;
+    height: 50px;
+    background-image: url("../Images/career/sub.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #2484aa;
+  }
+  
+  .redflower{
+    position: absolute;
+    top: 1580px;
+    left: 340px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  .purpleflower{
+    position: absolute;
+    top: 1900px;
+    right: 300px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .logo{
+    margin-left: 100px;
+    margin-top: 30px;
+  }

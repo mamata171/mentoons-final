@@ -1,0 +1,173 @@
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* *********************** Animations ******************** */
+
+/* *********************** Home **********************/
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.navbar{
+    background-color:#52b2cf !important ;
+    color: white !important;
+    /* position:fixed; */
+    width: 100%;
+    
+ 
+}
+.join-us-btn{
+    background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    margin-right: 100px;
+}
+
+.benifit-bar{
+    background-color: rgb(252, 100, 214);
+    padding: 5px ;
+    text-align: center;
+    
+}
+
+.section3{
+    background-color: rgb(255, 0, 93);
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-home img{
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+.d-flex-home{
+    display: flex;
+    position: relative;
+    background: url("../Images/home\ page/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+
+.right-home{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding-right: 40px;
+    text-align: right;
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+
+}
+
+.line{
+  margin-left: 350px;
+
+}
+.welcome{
+    width: 300px;
+  margin-left: 170px;
+    padding-top: 50px;
+
+  
+}
+
+.heading{
+    width:650px;
+    height: 230px;
+
+}
+
+.right-home p{
+margin-left: 140px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.baloons{
+    position: absolute;
+    top: 75vh;
+    width: 200px;
+    left: -100px;
+}
+
+.btn-explore{
+    margin-left: 300px;
+}
+
+/* **************************** section 2 ************** */
+.section2{
+    background: url("../Images/adda/back.png");
+    width: 100vw;
+    /* height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding-top: 80px ;
+    padding-bottom: 100px ;
+}
+
+.adda-head{
+    text-align: center;
+}
+
+.inner-flex img{
+    display: block;
+}
+
+.inner-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center */
+}
+
+
+.left-adda img{
+    margin: 10px;
+    width: 250px;
+}
+
+
+.blue{
+    width: 320px !important;
+    margin-top: 0px !important;
+    
+}
+
+.left-adda{
+    margin-left: 160px;
+}
+
+.right-adda{
+    margin-left: 100px;
+}
+
+.red{
+    padding-top: 30px !important;
+}
+
+.green{
+    padding-bottom: 30px;
+}

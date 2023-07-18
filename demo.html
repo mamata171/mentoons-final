@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <style> 
+
+    #loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+    }
+    #loading h1, #loading h3, #loading h2 {
+      margin: 10px;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .loading-content{
+        text-align: center;
+        color: orange;
+    }
+    #loading-img {
+      width: 250px; 
+    }
+    #content {
+      display: none;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loading = document.getElementById("loading");
+      var content = document.getElementById("content");
+
+      // Function to hide the loading screen and show the content
+      function showContent() {
+        loading.style.display = "none";
+        content.style.display = "block";
+      }
+
+      // Simulate delay before showing content (e.g., 3 seconds)
+      setTimeout(showContent, 3000);
+    });
+  </script> 
+ 
+</head>
+<body>
+  <div id="loading">
+    <img id="loading-img" src="Images/Screenshot 2023-07-18 104754.png" alt="Loading">
+   <div class="loading-content"> 
+    <h3>Time to change</h3>
+    <h2>Time to change</h2>
+    <h1>Time to change</h1>
+</div>
+  </div>
+
+  <div id="content">
+    <!-- Your web page content here -->
+    <h1>Welcome to My Web Page</h1>
+    <p>This is the content of my web page.</p>
+  </div>
+</body>
+</html>
