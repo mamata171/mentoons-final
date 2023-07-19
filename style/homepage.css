@@ -129,11 +129,46 @@ body{
 .left-adda{
     margin-left: 150px;
     width: 42vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    
 }
+
+.image-container {
+    position: relative;
+}
+
+.image-container button{
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    background:linear-gradient(rgb(216, 106, 185),rgb(236, 16, 229));
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 6px black;
+    padding: 4px 10px;
+}
+
+.red-img button{
+    top: 220px;
+
+}
+
 
 .left-adda img{
     margin-left: 15px;
 }
+
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .adda-image {
+      max-width: 100%;
+    }
+  }
+  
 .right-adda{
     width: 40vw;
     /* margin-right: 160px; */
@@ -141,6 +176,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .left-adda img,
@@ -157,4 +193,94 @@ body{
     color: white;
     border-left: 5px solid #ff6a14;
     padding-left: 10px;
+    margin-top: 60px !important;
+}
+
+.right-adda .spans{
+    margin-left: 170px;
+    position: absolute;
+    top: 200px;
+}
+.right-adda i{
+    background-color: white;
+    border-radius: 50%;
+    /* color: transparent; */
+    width: 27px;
+    height: 26px;
+    text-align: center;
+   
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.right-adda span a{
+    color: white;
+}
+
+
+/* ******************* Workshops *************** */
+
+.section3 .d-flex{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+    margin-top: 20px;
+    position: relative;
+}
+.second-row-workshop{
+    background: url("../Images/workshops/bluewave.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 30px !important;
+    padding: 70px 0px;
+    z-index: -1;
+
+}
+.workshops video{
+    border-radius: 10px;
+}
+
+.heading-workshop{
+    text-align: center;
+}
+.heading-workshop img{
+    width: 70vw;
+}
+.workshops video{
+    width: 350px;
+}
+
+.workshops .heading{
+    width: 150px;
+}
+
+.workshops .pw{
+    width: 500px;
+}
+
+.workshops .bw{
+    width: 150px;
+}
+
+.kid1{
+    position: absolute;
+    bottom: -60px;
+    width: 150px;
+}
+
+.kid2{
+    position: absolute;
+    bottom: -10px;
+    width: 80px;
+    left: 100px;
+    z-index: 1;
+
+}
+
+.kid3{
+    position: absolute;
+    bottom: -20px;
+    width: 150px;
+    right: 100px;
 }

@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/homepage.css">
-    <style>
+    <!-- <style>
         #loading {
           display: flex;
           flex-direction: column;
@@ -42,9 +42,9 @@
         #content {
           display: none;
         }
-      </style>
+      </style> -->
 
-      <script>
+      <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
           var loading = document.getElementById("loading");
           var content = document.getElementById("content");
@@ -71,17 +71,17 @@
           // Start showing the headings sequentially
           showNextHeading();
         });
-      </script> 
+      </script>  -->
 </head>
 <body> 
 
-    <div id="loading">
+    <!-- <div id="loading">
         <img id="loading-img" src="Images/Screenshot 2023-07-18 104754.png" alt="Loading">
        <div class="loading-content"> <h3>Time To Change</h3>
         <h2>Time To Change</h2>
         <h1>Time To Change</h1>
     </div>
-      </div>
+      </div> -->
     
     <div class="content-body" id="content">
     <section class="section1 home">
@@ -176,26 +176,87 @@
             <div class="inner-flex d-flex flex-wrap text-align-center">
      
                  <div class="left-adda">                     
-                         <img src="Images/adda/green.png" alt="" width="300px" class="green">
+                          <!-- <img src="Images/adda/green.png" alt="" width="300px" class="green">
                          <img src="Images/adda/red.png" alt=""  width="300px" class="red">
         
                          <img src="Images/adda/blue.png" alt="" width="300px" class="blue">
                          <img src="Images/adda/other.png" alt="" width="300px">
+                   -->
+                          <div class="image-container"> 
+                              <img src="Images/adda/green.png" alt=""  width="300px" class="adda-image">
+                              <button class="adda-button">Button 1</button>
+                          </div>
+                          <div class="image-container red-img">
+                              <img src="Images/adda/red.png" alt="" width="300px" class="adda-image">
+                              <button class="adda-button">Button 2</button>
+                          </div>
+                          <div class="image-container">
+                              <img src="Images/adda/blue.png" alt="" width="300px" class="adda-image">
+                              <button class="adda-button">Button 3</button>
+                          </div>
+                          <div class="image-container">
+                              <img src="Images/adda/other.png" alt=""  width="300px" class="adda-image">
+                              <button class="adda-button">Button 4</button>
+                
+                          </div> 
+                      
+                         
                  </div>
            
      
                  <div class="right-adda">
-                         <img src="Images/adda/sir.png" alt="" width="400px">
-                         <div>
-                            <i class="fa fa-phone">Twitter</i>
-                            <i class="fa fa-facebook">facebook</i>
+                         <img src="Images/adda/sir2.png" alt="" width="400px">
+                         <div class="spans">
+                            <span><i class="fa fa-twitter"></i><a href=""> Twitter </a></span>
+                            <span><i class="fa fa-facebook"></i><a href=""> Facebook </a></span>
+                            <span><i class="fa fa-instagram"></i><a href=""> Instagram </a></span>
                          </div>
                          <!-- <img src="Images/adda/content.png" class="pr-3 bg-dark con" alt="" width="360px"> -->
-                         <p class="rp">Lorem Lorem, ipsum dolor. ipsum dolor sit amet consectetur adipisicing elit. A, officiis reprehenderit? Obcaecati corrupti nisi cupiditate, hic voluptatem, facere nesciunt qui at, sit itaque fuga quod!</p>
+                         <p class="rp mt-3">Lorem Lorem, ipsum dolor. ipsum dolor sit amet consectetur adipisicing elit. A, officiis reprehenderit? Obcaecati corrupti nisi cupiditate, hic voluptatem, facere nesciunt qui at, sit itaque fuga quod!</p>
                          <img src="Images/adda/read.png" alt="" width="150px" class="my-3">
                  </div>
          </div>
          </section> 
+
+
+        <section class="section3  my-5 workshops">
+            <div class="heading-workshop">
+              <img src="Images/workshops/heading.png" alt="">
+            </div>
+
+            <div class="d-flex first-row-workshop">
+              <div class="left-workshop">
+                <img src="Images/workshops/forwhom.png" alt="" class="my-2 heading">
+                <p class="pw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque inventore nisi, fugit omnis culpa repellendus illum soluta voluptatibus alias animi?</p>
+               <a href="workshops.html"><img src="Images/workshops/readmore.png" alt="" class="bw"></a> 
+              </div>
+
+              <div class="right-workshop">
+                <video src="Images/video.mp4" controls></video>
+              </div>
+
+              <img src="Images/workshops/kid2.png" alt="" class="kid1">
+            </div>
+
+            <div class="d-flex second-row-workshop">
+
+              <div class="left-workshop">
+                <video src="Images/video.mp4" controls></video>
+              </div>
+
+              <div class="right-workshop">
+                <img src="Images/workshops/benifits.png" alt="" class=" my-2 heading">
+                <p class="pw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque inventore nisi, fugit omnis culpa repellendus illum soluta voluptatibus alias animi?</p>
+              <a href=""> <img src="Images/workshops/readmore.png" alt="" class="bw"></a> 
+              </div>
+
+              <img src="Images/workshops/kid3.png" alt="" class="kid2">
+              <img src="Images/workshops/kid1.png" alt="" class="kid3">
+              
+            </div>
+
+        </section>
+
         </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
