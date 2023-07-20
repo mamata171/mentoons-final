@@ -103,3 +103,25 @@ body{
     cursor: pointer;
 }
 
+
+/* @media screen and (max-width:700px) {
+    .flex-box{
+        text-align: center;
+    }
+    #home-img{
+        width: 550px;
+        margin-right: 100px;
+    }
+    .left-home {
+     
+        margin-left: 0px;
+    }
+    
+    .right-home{
+        background: none;
+    }
+
+    .section2{
+        background: none;
+    }
+} */

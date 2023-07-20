@@ -70,7 +70,7 @@ body{
 }
 
 .left-home {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-left: 7vw;
 }
 
@@ -126,3 +126,24 @@ body{
     display: block;
     margin: auto;
 }
+
+.flex{
+    flex-wrap: wrap;
+}
+.third-flex{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.third-left p{
+    width: 500px;
+    text-align: justify;
+}
+
+.yellow-section{
+    background-color: orange;
+}
+
+.video-science{
+    border-radius: 15px;
+}
+
