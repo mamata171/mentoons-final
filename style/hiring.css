@@ -250,3 +250,110 @@ ul{
     margin-left: 100px;
     margin-top: 30px;
   }
+
+  .demo{
+    background: url("../Images/adda/back.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px;
+    padding-bottom: 70px;
+  }
+  .dfh{
+    justify-content:center;
+    /* height: 300vh; */
+  }
+  .box{
+    display: flex;
+    margin-right: 100px;
+   
+  }
+
+  .join h1{
+    font-size: 3rem;
+    color: skyblue;
+  }
+  .round img{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+
+  }
+
+  .round{
+    margin-right: 20px;
+  }
+
+  .video video{
+    width: 300px;
+    border-radius: 15px;
+    background-color: #2484aa;
+  }
+
+/* .video-up video{
+    width: 70vw;
+}
+
+.first-img img{
+    display: block;
+    width: 400px;
+}
+
+.second-img{
+    width: 700px;
+} */
+
+
+
+  /* Additional Styles for the Image Gallery */
+
+  .gallery-container{
+    position: relative;
+  }
+li{
+    display: inline;
+}
+
+li img{
+    border-radius: 10px;
+    margin: 10px;
+}
+  
+.redflower2{
+    position: absolute;
+    top: 0px;
+    left: 340px;
+    width: 50px;
+    /* animation: spin 2s linear infinite; */
+  }
+
+  .purpleflower2{
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    width: 50px;
+    /* animation: spin 2s linear infinite; */
+
+  }
+
+  .demo{
+    position: relative;
+  }
+
+  .redflower3{
+    position: absolute;
+    top: 63vh;
+    left: 300px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  .purpleflower3{
+    position: absolute;
+    top: 63vh;
+    right: 400px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+
+  }
+ 
