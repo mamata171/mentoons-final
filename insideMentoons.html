@@ -125,7 +125,16 @@
 
                             </div>
                         </li>
-                
+                        
+                        <li>
+                            <input type="checkbox" name = "accordian" id="third">
+                            <label for="third">Hirirng Theater Artists</label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  distinctio accusantium do</p>
+                                <img src="Images/inside/submit.png" alt="" width="100px">
+
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -134,20 +143,26 @@
     </section>
 
     <section class="section2 mt-5">
-        <div class="text-head text-center p-3">
-        <h4>Gallery</h4>
+        <div class="text-head text-center pt-3 text-light">
+        <h4 class="pt-3">Gallery</h4>
         <h2>Welcome to our gallery, Thank you for stopping</h2>
         <p>We have put together a collection of some memories during of three yeras of research</p>
-
+    </div>
         <!-- <div class="d-flex dfi my-3 text-center">
             <img src="Images/team.jpeg" alt="">
             <img src="Images/sir-dinesh.jpeg" alt="">
             <img src="Images/lincy.jpeg" alt="">
         </div> -->
         
-        <div class="carousel-container">
+        <!-- <div class="carousel-container">
             <div class="carousel d-flex my-3 text-center">
               <div class="carousel-inner">
+                <img src="Images/team.jpeg" alt="">
+                <img src="Images/sir-dinesh.jpeg" alt="">
+                <img src="Images/lincy.jpeg" alt="">
+                <img src="Images/team.jpeg" alt="">
+                <img src="Images/sir-dinesh.jpeg" alt="">
+                <img src="Images/lincy.jpeg" alt="">
                 <img src="Images/team.jpeg" alt="">
                 <img src="Images/sir-dinesh.jpeg" alt="">
                 <img src="Images/lincy.jpeg" alt="">
@@ -156,26 +171,148 @@
           </div>
           <button class="carousel-button left-button">&#8249;</button>
           <button class="carousel-button right-button">&#8250;</button>
-        </div>
-    </div>
+        </div> -->
+        <section class="wrapper-sec">
+            <div class="wrapper">
+               <i id="left" class="fas fa-angle-left"></i>
+                  <ul class="carousel">
+            
+                    <li class="card">
+                      <div class="img"><img src="Images/team.jpeg" alt="img" draggable="false"></div>
+                      
+                    </li>
+            
+                    <li class="card">
+                      <div class="img"><img src="Images/sir-dinesh.jpeg" alt="img" draggable="false"></div>
+                    </li>
+            
+                    <li class="card">
+                      <div class="img"><img src="Images/lincy.jpeg" alt="img" draggable="false"></div>
+
+                    </li>
+            
+                    <!-- <li class="card">
+                      <div class="img"><img src="Images/inside/WhatsApp Image 2023-07-27 at 5.32.28 PM.jpeg" alt="img" draggable="false"></div>
+                    
+                    </li> -->
+            
+                    <li class="card">
+                      <div class="img"><img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.24 PM.jpeg" alt="img" draggable="false"></div>
+                   
+                    </li>
+            
+                    <li class="card">
+                      <div class="img"><img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.26 PM (1).jpeg" alt="img" draggable="false"></div>
+                   
+                    </li>
+                    <i id="right" class="fas fa-angle-right"></i> 
+            
+                </div>
+
+                <div class="d-flex dfv mt-3">
+                    <video src="Images/video.mp4" width="400px" controls></video>
+                    <video src="Images/video.mp4" width="400px" controls></video>
+                </div>
+            </section>
+
+            <div class="view-more text-center">
+                <img src="Images/inside/view-more.png" alt="" width="150px">
+            </div>
+    
+        <!-- <img src="Images/inside/wave.png" alt="" class="wave2-left" width="150px"> -->
+        <!-- <img src="Images/inside/wave.png" alt="" class="wave2-right" width="150px"> -->
     </section>
 
 
     <script>
+        console.log("hello world")
+
+
+const wrapper = document.querySelector(".wrapper");
         const carousel = document.querySelector(".carousel");
-        const leftButton = document.querySelector(".left-button");
-        const rightButton = document.querySelector(".right-button");
-        let translateX = 0;
-
-        rightButton.addEventListener("click", () => {
-        translateX -= 400;
-        carousel.style.transform = `translateX(${translateX}px)`;
+        const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+        const arrowBtns = document.querySelectorAll(".wrapper i");
+        const carouselChildrens = [...carousel.children];
+        
+        let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+        
+        // Get the number of cards that can fit in the carousel at once
+        let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+        
+        // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+        carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
         });
-
-        leftButton.addEventListener("click", () => {
-        translateX += 400;
-        carousel.style.transform = `translateX(${translateX}px)`;
+        
+        // Insert copies of the first few cards to end of carousel for infinite scrolling
+        carouselChildrens.slice(0, cardPerView).forEach(card => {
+            carousel.insertAdjacentHTML("beforeend", card.outerHTML);
         });
+        
+        // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+        
+        // Add event listeners for the arrow buttons to scroll the carousel left and right
+        arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
+        
+        const dragStart = (e) => {
+            isDragging = true;
+            carousel.classList.add("dragging");
+            // Records the initial cursor and scroll position of the carousel
+            startX = e.pageX;
+            startScrollLeft = carousel.scrollLeft;
+        }
+        
+        const dragging = (e) => {
+            if(!isDragging) return; // if isDragging is false return from here
+            // Updates the scroll position of the carousel based on the cursor movement
+            carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+        }
+        
+        const dragStop = () => {
+            isDragging = false;
+            carousel.classList.remove("dragging");
+        }
+        
+        const infiniteScroll = () => {
+            // If the carousel is at the beginning, scroll to the end
+            if(carousel.scrollLeft === 0) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                carousel.classList.remove("no-transition");
+            }
+            // If the carousel is at the end, scroll to the beginning
+            else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.offsetWidth;
+                carousel.classList.remove("no-transition");
+            }
+        
+            // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+            clearTimeout(timeoutId);
+            if(!wrapper.matches(":hover")) autoPlay();
+        }
+        
+        const autoPlay = () => {
+            if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2000);
+        }
+        autoPlay();
+        
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("scroll", infiniteScroll);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+     
 
     </script>
 </body>
