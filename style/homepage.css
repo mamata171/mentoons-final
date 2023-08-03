@@ -247,8 +247,13 @@ body{
 .heading-workshop img{
     width: 70vw;
 }
+
+.red-head{
+    color: red;
+    font-weight: 800;
+}
 .workshops video{
-    width: 350px;
+    width: 450px;
 }
 
 .workshops .heading{
@@ -283,4 +288,79 @@ body{
     bottom: -20px;
     width: 150px;
     right: 100px;
+}
+
+.footer{
+    background: url("../Images/footer/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+
+    
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 50vh; */
+    width: 100vw;
+    padding-bottom: 40px ;
+    position: relative;
+
+}
+
+.sub-button{
+    display: block;
+    background-color: rgb(248, 75, 75);
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin-top: 6px;
+    
+}
+
+.icons img{
+    width: 30px;
+    margin: 3px 3px;
+
+}
+
+.box ul{
+    list-style: none;
+    text-align: center;
+}
+
+.box ul li{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.box ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.kids{
+    /* width: 800px; */
+    width: 900px;
+
+    margin: auto;
+    margin-top: 0px !important;
+}
+
+.kids img{
+    width: 900px;
+}
+
+.sun-img{
+   position: absolute;
+    bottom: 30px; 
+    width: 80px;
+    /* text-align: center; */
 }

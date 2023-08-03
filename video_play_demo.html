@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    .video-container {
+        position: relative;
+        max-width: 600px;
+      }
+      
+      video {
+        width: 100%;
+      }
+      
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      /* Play icon using a pseudo-element */
+      .play-button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 0 12px 20px;
+        border-color: transparent transparent transparent #fff;
+      }
+      
+      /* Hide the default video controls */
+      video::-webkit-media-controls {
+        display: none;
+      }
+      
+   </style>
+   <script>
+    var video = document.getElementById("myVideo");
+    var playButton = document.querySelector(".play-button");
+  
+    playButton.addEventListener("click", function() {
+      if (video.paused) {
+        video.play();
+        playButton.style.display = "none"; // Hide the play button when the video starts playing
+      } else {
+        video.pause();
+        playButton.style.display = "block"; // Show the play button again when the video is paused
+      }
+    });
+  
+    // Hide the play button when the video is playing
+    video.addEventListener("play", function() {
+      playButton.style.display = "none";
+    });
+  
+    // Show the play button when the video is paused
+    video.addEventListener("pause", function() {
+      playButton.style.display = "block";
+    });
+  </script>
+  
+  
+      
+      
+</head>
+<body>
+    <div class="video-container">
+        <video id="myVideo" src="Images/video.mp4" width="500px"></video>
+        <div class="play-button"></div>
+      </div>
+        
+</body>
+</html>
