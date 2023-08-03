@@ -57,6 +57,7 @@ body{
 }
 .content p{
     width: 480px;
+    text-align: justify;
 }
 
 .content{
