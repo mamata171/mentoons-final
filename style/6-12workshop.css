@@ -1,0 +1,85 @@
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* *********************** Animations ******************** */
+
+
+
+.nav-bar {
+    margin-left: 300px !important;
+    font-size: 1.3rem;
+    
+}
+
+.navbar{
+    background-color:rgb(111, 153, 215) !important ;
+    color: white !important;
+ 
+}
+
+.join-us-btn{
+    background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+
+.nav-item{
+    margin-left: 20px !important;
+}
+
+.cloud-img{
+    margin-left: -35px;
+}
+
+
+.left img{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.key{
+    display: inline !important;
+}
+
+.d-flex{
+    justify-content: space-evenly !important;
+}
+
+.left{
+    /* border: 2px solid black; */
+    margin-left: 10vw;
+
+}
+
+.right{
+    /* border: 2px solid black; */
+    margin-left: 100px;
+
+}
+
+.left a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+.right img{
+    margin: 5px;
+}
+
+.join-us-purple{
+    margin-top: 20px;
+}
+
+.cloud2{
+    margin-right: -30px;
+}

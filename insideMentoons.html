@@ -172,7 +172,7 @@
           <button class="carousel-button left-button">&#8249;</button>
           <button class="carousel-button right-button">&#8250;</button>
         </div> -->
-        <section class="wrapper-sec">
+        <!-- <section class="wrapper-sec">
             <div class="wrapper">
                <i id="left" class="fas fa-angle-left"></i>
                   <ul class="carousel">
@@ -191,10 +191,7 @@
 
                     </li>
             
-                    <!-- <li class="card">
-                      <div class="img"><img src="Images/inside/WhatsApp Image 2023-07-27 at 5.32.28 PM.jpeg" alt="img" draggable="false"></div>
                     
-                    </li> -->
             
                     <li class="card">
                       <div class="img"><img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.24 PM.jpeg" alt="img" draggable="false"></div>
@@ -213,8 +210,22 @@
                     <video src="Images/video.mp4" width="400px" controls></video>
                     <video src="Images/video.mp4" width="400px" controls></video>
                 </div>
-            </section>
-
+            </section> -->
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="Images/youtube/professional.png" alt="img" draggable="false">
+                  <img src="Images/youtube/career_change.png" alt="img" draggable="false">
+                  <img src="Images/youtube/job_search.png" alt="img" draggable="false">
+                  <img src="Images/five.avif" alt="img" draggable="false">
+                  <img src="Images/five.avif" alt="img" draggable="false">
+                  <img src="Images/five.avif" alt="img" draggable="false">
+                  <img src="Images/five3.avif" alt="img" draggable="false">
+                  <img src="Images/five.avif" alt="img" draggable="false">
+                  <img src="Images/five.avif" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
             <div class="view-more text-center">
                 <img src="Images/inside/view-more.png" alt="" width="150px">
             </div>
@@ -224,7 +235,7 @@
     </section>
 
 
-    <script>
+    <!-- <script>
         console.log("hello world")
 
 
@@ -314,6 +325,81 @@ const wrapper = document.querySelector(".wrapper");
         wrapper.addEventListener("mouseleave", autoPlay);
      
 
-    </script>
+    </script> -->
+    <script>
+        const carousel = document.querySelector(".carousel"),
+    firstImg = carousel.querySelectorAll("img")[0],
+    arrowIcons = document.querySelectorAll(".wrapper i");
+    
+    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+    
+    const showHideIcons = () => {
+        // showing and hiding prev/next icon according to carousel scroll left value
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+        arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+    
+    arrowIcons.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+            // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+        });
+    });
+    
+    const autoSlide = () => {
+        // if there is no image left to scroll then return from here
+        if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    
+        positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+        let firstImgWidth = firstImg.clientWidth + 14;
+        // getting difference value that needs to add or reduce from carousel left to take middle img center
+        let valDifference = firstImgWidth - positionDiff;
+    
+        if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+            return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+        }
+        // if user is scrolling to the left
+        carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    
+    const dragStart = (e) => {
+        // updatating global variables value on mouse down event
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrollLeft = carousel.scrollLeft;
+    }
+    
+    const dragging = (e) => {
+        // scrolling images/carousel to left according to mouse pointer
+        if(!isDragStart) return;
+        e.preventDefault();
+        isDragging = true;
+        carousel.classList.add("dragging");
+        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        carousel.scrollLeft = prevScrollLeft - positionDiff;
+        showHideIcons();
+    }
+    
+    const dragStop = () => {
+        isDragStart = false;
+        carousel.classList.remove("dragging");
+    
+        if(!isDragging) return;
+        isDragging = false;
+        autoSlide();
+    }
+    
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
+    
+    document.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
+    
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+      </script>
 </body>
 </html>

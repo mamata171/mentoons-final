@@ -1,0 +1,368 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    margin-left: 240px !important;
+    font-size: 1.3rem;
+    
+}
+.nav-item{
+    margin-left: 20px !important;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    background-color:#52b2cf !important ;
+    color: white !important;
+    /* position:fixed; */
+    width: 100%;
+}
+.join-us-btn{
+    background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    margin-right: 100px;
+}
+
+.benifit-bar{
+    background-color: rgb(248, 213, 36);
+    padding-top: 10px ;
+    padding-bottom: -10px ;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+.flex-box-home{
+    background: url("../Images/home\ page/background.png");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100vw;
+    height:90vh;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.welcome{
+    margin-left: 300px;
+}
+
+
+.left-home{
+    margin-left: 10px;
+    
+}
+
+.line{
+    margin-left: 200px;
+}
+
+.right-home{
+    /* padding-left: 100px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.right-home p{
+    width: 500px;
+  margin-left: 150px;
+  text-align: justify;
+   
+
+}
+
+.btn-explore{
+    margin-left: 150px;
+}
+
+.i1{
+    position: absolute;
+    top: 20px;
+    left: 470px;
+    animation-name: pendulum;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+}
+@keyframes pendulum {
+    0% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+  }
+.i2{
+    position: absolute;
+    top: 65vh;
+    left: 660px;
+}
+
+.section2{
+    background: url("../Images/adda/back.png");
+    width: 100vw;
+    /* height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+}
+
+.left-adda{
+    margin-left: 150px;
+    width: 42vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container button{
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    background:linear-gradient(rgb(216, 106, 185),rgb(236, 16, 229));
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 6px black;
+    padding: 4px 10px;
+}
+
+.red-img button{
+    top: 220px;
+
+}
+
+
+.left-adda img{
+    margin-left: 15px;
+}
+
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .adda-image {
+      max-width: 100%;
+    }
+  }
+  
+.right-adda{
+    width: 40vw;
+    /* margin-right: 160px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-adda img,
+    .right-adda img {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+.rp{
+    width: 400px;
+    text-align: justify;
+    margin-left: 50px !important;
+    color: white;
+    border-left: 5px solid #ff6a14;
+    padding-left: 10px;
+    margin-top: 60px !important;
+}
+
+.right-adda .spans{
+    margin-left: 170px;
+    position: absolute;
+    top: 200px;
+}
+.right-adda i{
+    background-color: white;
+    border-radius: 50%;
+    /* color: transparent; */
+    width: 27px;
+    height: 26px;
+    text-align: center;
+   
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.right-adda span a{
+    color: white;
+}
+
+
+/* ******************* Workshops *************** */
+
+.section3 .d-flex{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+    margin-top: 20px;
+    position: relative;
+}
+.second-row-workshop{
+    background: url("../Images/workshops/bluewave.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 30px !important;
+    padding: 70px 0px;
+    z-index: -1;
+
+}
+.workshops video{
+    border-radius: 10px;
+}
+
+.heading-workshop{
+    text-align: center;
+}
+.heading-workshop img{
+    width: 70vw;
+    margin-top: 30px;
+}
+
+.red-head{
+    color: red;
+    font-weight: 800;
+}
+.workshops video{
+    width: 450px;
+}
+
+.workshops .heading{
+    width: 150px;
+}
+
+.workshops .pw{
+    width: 500px;
+}
+
+.workshops .bw{
+    width: 150px;
+}
+
+.kid1{
+    position: absolute;
+    bottom: -60px;
+    width: 150px;
+}
+
+.kid2{
+    position: absolute;
+    bottom: -10px;
+    width: 80px;
+    left: 100px;
+    z-index: 1;
+
+}
+
+.kid3{
+    position: absolute;
+    bottom: -20px;
+    width: 150px;
+    right: 100px;
+}
+
+.footer{
+    background: url("../Images/footer/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+
+    
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 50vh; */
+    width: 100vw;
+    padding-bottom: 40px ;
+    position: relative;
+
+}
+
+.sub-button{
+    display: block;
+    background-color: rgb(248, 75, 75);
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin-top: 6px;
+    
+}
+
+.icons img{
+    width: 30px;
+    margin: 3px 3px;
+
+}
+
+.footer-box ul{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-box ul li{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer-box ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.kids{
+    /* width: 800px; */
+    width: 900px;
+
+    margin: auto;
+    margin-top: 0px !important;
+}
+
+.kids img{
+    width: 900px;
+}
+
+.sun-img{
+   position: absolute;
+    bottom: 30px; 
+    width: 80px;
+    /* text-align: center; */
+}
+
