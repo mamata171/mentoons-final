@@ -1,0 +1,177 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.home{
+    background: url("../Images/podcast/Artboard\ 1.png");
+    /* background: url("../Images/speakeasy/speak\ easy\ page-044.jpg"); */
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+    
+}
+
+.navbar{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 80px;
+}
+
+.ul{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    margin-right: 50px;
+}
+
+.ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.ul a:hover{
+    background-color: rgb(218, 96, 96);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.flex-box{
+    display: flex;
+    
+}
+
+.left-side{
+    margin-left:20px 
+}
+
+.right-side .guided,h5{
+    margin-left: 100px;
+    text-align: justify;
+}
+
+
+.icons{
+    text-align: center;
+}
+.right-side h5{
+    width: 700px;
+    /* word-spacing: 1.2px; */
+
+}
+
+.videos{
+    margin-top: 6px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.image img{
+    width: 300px;
+    height: 250px;
+    border: 3px solid black;
+    background-color: black;
+}
+.image{
+    position: relative;
+}
+.content{
+    /* display: none; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    font-size: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    
+}
+
+.content i{
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+/* .image img:hover + .content{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+} */
+
+.image:hover .content {
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.videos img{
+    margin: 10px;
+    
+}
+
+.first{
+    margin-left: -100px;
+}
+
+.below img{
+    margin-top: -10px;
+    width: 100vw;
+}
+
+
+
+.wave {
+    width: 130px; /* initial width of the image */
+    margin-left: 70px;
+    animation: widthAnimation 3s infinite linear;
+  transform-origin: top right;
+  }
+  
+  @keyframes widthAnimation {
+    0% {
+        transform: scaleX(0); /* start with no width */
+      }
+      100% {
+        transform: scaleX(1); /* reach full width */
+      }
+  }
+.mic{
+    /* margin-left: 70px; */
+    margin-top: 30px;
+}
+
+.start{
+    transition: scale 5s ease-in-out;
+}
+
+.start:hover{
+    transform: scale(1.05);
+}
