@@ -46,14 +46,14 @@ body{
 }
 
 .flex-box-home{
-    background: url("../Images/home\ page/background.png");
-    background-position:left;
+    /* background: url("../Images/home\ page/background 1.png"); */
+    /* background-position:left; */
     background-repeat: no-repeat;
     background-size:cover;
     width:100vw;
     height:90vh;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     position: relative;
 
 }
@@ -63,14 +63,6 @@ body{
 }
 
 
-.left-home{
-    margin-left: 10px;
-    
-}
-
-.left-home img{
-    margin-top: 100px;
-}
 
 .line{
     margin-left: 200px;
