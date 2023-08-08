@@ -115,16 +115,16 @@ body{
     left: 660px;
 }
 
-.section2{
+/* .section2{
     background: url("../Images/adda/back.png");
     width: 100vw;
-    /* height: 100vh; */
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
     padding-top: 100px ;
     padding-bottom: 100px ;
-}
+} */
 
 .left-adda{
     margin-left: 150px;
