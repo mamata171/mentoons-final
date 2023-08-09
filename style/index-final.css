@@ -24,6 +24,8 @@ body{
     /* position:fixed; */
     width: 100%;
 }
+
+
 .join-us-btn{
     background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
     border-radius: 18px;
@@ -46,23 +48,32 @@ body{
 }
 
 .flex-box-home{
-    /* background: url("../Images/home\ page/background 1.png"); */
-    /* background-position:left; */
+    background: url("../Images/home\ page/background.png");
+    background-position:left;
     background-repeat: no-repeat;
     background-size:cover;
     width:100vw;
     height:90vh;
     display: flex;
-    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     position: relative;
 
 }
 
 .welcome{
-    margin-left: 300px;
+    margin-left: 200px;
 }
 
 
+.left-home .main-img{
+    margin-left: 150px;
+    
+}
+
+.left-home img{
+    margin-top: 10px;
+}
 
 .line{
     margin-left: 200px;
@@ -74,17 +85,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 80px;
     
 }
 
 
 .right-home p{
     width: 500px;
-  margin-left: 150px;
+    margin-left: 150px;
   text-align: justify;
-   
-
 }
+
+
 
 .btn-explore{
     margin-left: 150px;
@@ -109,4 +121,36 @@ body{
     position: absolute;
     top: 65vh;
     left: 660px;
+}
+
+.side-btn{
+    position: absolute;
+    right: -20px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: #52b2cf;
+    color: white;
+    border: none;
+    
+
+}
+
+.side-btns{
+    background-color: #52b2cf;
+}
+
+.btn1{
+    top: 43vh;
+}
+
+.btn2{
+    top:49vh ;
+}
+
+.btn3{
+    top: 55vh;
+}
+
+.btn4{
+    top:61vh ;
 }
