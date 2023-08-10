@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index-final.css">
+    <script src="script-final.js"></script>
      <!-- <style>
         #loading {
           display: flex;
@@ -50,7 +45,7 @@
         }
       </style>  -->
 
-      <script>
+      <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
           var loading = document.getElementById("loading");
           var content = document.getElementById("content");
@@ -77,7 +72,7 @@
           // Start showing the headings sequentially
           showNextHeading();
         });
-      </script> 
+      </script>  -->
 </head>
 <body>
     <!-- <div id="loading">
@@ -133,19 +128,19 @@
           <div class="benifit-bar d-flex">
 
             <div class="item1">
-                <p><img src="Images/home page/first.png" alt="" width="30px" class="mr-2">  Great learning environment</p>
+                <p><img src="Images/home page/first.png" alt="" width="30px" class="mr-2">  Great Learning Environment</p>
             </div>  
             
             <div class="item1">
-                <p> <img src="Images/home page/second.png" alt="" width="30px" class="mr-2">  Workshops for everyone</p>
+                <p> <img src="Images/home page/second.png" alt="" width="30px" class="mr-2">  Workshops For Everyone</p>
             </div>
 
             <div class="item1">
-                <p><img src="Images/home page/third.png" alt="" width="30px" class="mr-2">  Professional mentors</p>
+                <p><img src="Images/home page/third.png" alt="" width="30px" class="mr-2">  Professional Mentors</p>
             </div>
 
             <div class="item1">
-                <p>  <img src="Images/home page/fourth.png" alt="" width="30px" class="mr-2">  Fun based learning</p>
+                <p>  <img src="Images/home page/fourth.png" alt="" width="30px" class="mr-2">  Fun Based Learning</p>
             </div>
 
           </div>
@@ -158,26 +153,48 @@
                         <img src="Images/home page/characters.png" class="main-img" width="500px" alt="">
                         <!-- <img src="Images/home page/welcome to mentoons-02.png" class="" width="600px" alt=""> -->
                     </div>
+
                     <div class="right-home">
-                        <img src="Images/home page/welcome to mentoons-03.png" class="heading my-2 mt-md-3 img-fluid" alt="" width="600px">
+                        <img src="Images/home page/welcome to mentoons-03.png" class="heading my-2 mt-4  img-fluid" alt="" width="650px">
                         <img src="Images/home page/line.png" alt="" class="line img-fluid" width="300px">
                         <p class="my-4"> We have come together to revolutionize the world of mentoring through innovative, creative, and engaging mediums. </p>
                         <img src="Images/home page/explore.png" alt="" class="btn-explore img-fluid mb-3" width="150px">
-                 
+                        <!-- <img src="Images/home page/explore.png" alt="" class="btn-explore2 ml-3 img-fluid mb-3" width="150px"> -->
+
                 </div>
 
                 <!-- *************** side buttons *********************** -->
                
-                <!-- <img src="Images/home page/sun.png" alt="" width="150px" class="i1"> -->
-                <img src="Images/home page/baloons.png" alt="" width="150px" class="i2">
+                <!-- <img src="Images/home page/sun.png" alt="" width="130px" class="i1"> -->
+                <img src="Images/home page/Asset 2.png" alt="" width="150px" class="i2">
+                <!-- <img src="Images/home page/baloons.png" alt="" width="150px" class="i2"> -->
           </div>
 
+          <img src="Images/home page/Asset 1.png" alt="" width="150px" class="i3">
+          <img src="Images/home page/Asset 3.png" alt="" width="170px" class="i4">
+
           <div class="side-btns">
-          <button class="side-btn btn1">About Us</button>
-          <button class="side-btn btn2">Lorem ps</button>
-          <button class="side-btn btn3">Lorem ps</button>
-          <button class="side-btn btn4">Lorem ps</button>
+
+            <div class="div">
+              <button class="side-btn mt" onclick="sidebarcontent()">mt</button>
+                <div class="content c1" id="hidden">
+                    <div class="small-flex"><h4>About us</h4><button onclick="close_sidebar()"> <i class="fa fa-close"></i></button></div>   
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam, hic exercitationem obcaecati suscipit voluptatibus.
+                    <button class="btn btn-primary explore-small">Explore</button>
+                </div>
+            </div> 
+
+         <div class="div">
+              <button class="side-btn btn1"><i class="fa fa-twitter"></i></button>
+          </div> 
+         <div class="div"><button class="side-btn btn2"><i class="fa fa-instagram"></i></button></div> 
+          <button class="side-btn btn3"><i class="fa fa-facebook"></i></button>
+          <button class="side-btn btn4"><i class="fa fa-linkedin"></i></button>
         </div>
         </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+            
 </body>
 </html>

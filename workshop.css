@@ -1,0 +1,61 @@
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* *********************** Home **********************/
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.navbar{
+    background-color:#1f2020 !important ;
+    color: white !important;
+    /* position:fixed; */
+    width: 100%;
+
+    
+ 
+}
+.join-us-btn{
+    background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
+    border-radius: 18px;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    margin-right: 100px;
+}
+
+.benifit-bar{
+    background-color: rgb(252, 100, 214);
+    padding: 5px ;
+    text-align: center;
+    
+}
+
+
+
+.right-nav {
+    position: absolute;
+    right: 10px;
+}
+
+.blue-background{
+    background-image: url("../Images/workshop/blue-back.png");
+    background-color: #1f2020 !important;
+}
+
+/* ***************** Image carousal *********** */
+
+
+/* **************** Section2 ***************** */
+

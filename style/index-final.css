@@ -48,10 +48,11 @@ body{
 }
 
 .flex-box-home{
-    background: url("../Images/home\ page/background.png");
+    /* background: url("../Images/home\ page/background.png"); */
+    /* background: url("../Images/home\ page/mentoons homepage illustration bg.png"); */
     background-position:left;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:100% 100%;
     width:100vw;
     height:90vh;
     display: flex;
@@ -67,7 +68,7 @@ body{
 
 
 .left-home .main-img{
-    margin-left: 150px;
+    margin-left: 100px;
     
 }
 
@@ -81,11 +82,12 @@ body{
 
 .right-home{
     /* padding-left: 100px; */
-    margin-top: 20px;
-    display: flex;
+    /* margin-top: 20px; */
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 80px;
+    align-items: center; */
+    margin-right: 70px;
+    margin-left: 130px;
     
 }
 
@@ -99,13 +101,13 @@ body{
 
 
 .btn-explore{
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
-.i1{
+/* .i1{
     position: absolute;
-    top: 20px;
-    left: 470px;
+    top: 26px;
+    left: 490px;
     animation-name: pendulum;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -116,41 +118,104 @@ body{
     0% { transform: rotate(10deg); }
     50% { transform: rotate(-10deg); }
     100% { transform: rotate(10deg); }
-  }
+  } */
+
 .i2{
     position: absolute;
-    top: 65vh;
-    left: 660px;
+    top: 35vh;
+    left: 630px;
+    
 }
 
-.side-btn{
+.i3{
     position: absolute;
-    right: -20px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    background-color: #52b2cf;
-    color: white;
-    border: none;
-    
+    top: 130px;
+    left: 10px;
+}
 
+.i4{
+    position: absolute;
+    top: 155px;
+    left: 520px;
+}
+
+.video{
+    position: absolute;
+    top:68vh;
+    left: 40vw;
 }
 
 .side-btns{
-    background-color: #52b2cf;
+    position: absolute;
+    /* background-color: #52b2cf; */
+    top: 44vh;
+    right: -3px;
+}
+
+.side-btn{
+    padding: 10px 20px;
+    /* background-color:#52b2cf; */
+    color: white;
+    border: none;
+    display: block;
+    width: 50px;
+    transition: transform 0.2s; /* Adding a transition for smooth effect */
+
+}
+
+.side-btn:hover {
+    transform: translateX(-20px); 
+    cursor: pointer;
 }
 
 .btn1{
-    top: 43vh;
+    background-color: #52b2cf;
 }
 
 .btn2{
-    top:49vh ;
+    background-color: orange;
 }
 
 .btn3{
-    top: 55vh;
+    background-color: rgb(23, 195, 123);
 }
 
 .btn4{
-    top:61vh ;
+    background-color:#0f8add;
 }
+
+.mt{
+    background-color: rgb(255, 47, 20);
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content{
+    /* display: none; */
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 250px;
+    text-align: justify;
+    padding: 8px 15px;
+    /* border: 2px solid red; */
+    display: none;
+
+}
+
+.c1{
+    background-color: rgb(251, 249, 249);
+}
+
+.small-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-small{
+    border: none !important;
+    background-color: rgb(255, 47, 20) !important;
+
+}
+

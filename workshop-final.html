@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ab66e8c8b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/workshop.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+    <script src="script-final.js"></script>
+    <style>
+       .navbar{
+        display: flex;
+        justify-content: space-evenly;
+
+       }
+
+       .right-nav img{
+        width:500px;
+        height: 274px;
+       }
+
+        /* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #343F4F;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -45px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -54px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 280px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 25px;
+  width: calc(100% / 3);
+  border-radius: 10px;
+  
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+.now-trending{
+    margin-left: 12vw;
+}
+
+.heading i{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 1px soli grey !important;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+.heading{
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    padding: 20px 15px;
+}
+
+.blue-background{
+    background-image: url("../Images/workshop/blue-back.png");
+    text-align: left;
+    width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.blue-background p{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.video{
+    margin-top: 55px;
+    text-align: center;
+}
+
+.blue-background video{
+   border-radius: 15px;
+   
+}
+    </style>
+   
+</head>
+<body>
+    <div class="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-light sticky-top">
+            <a class="navbar-brand" href="index-final.html"><img src="Images/logo_prev.png" alt="" width="350px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="right-nav">
+                <img src="Images/workshop/1-01.png" alt="">
+            </div>
+
+          </nav>
+          <div class="benifit-bar d-flex">
+
+            <div class="item1">
+                <p><img src="Images/home page/first.png" alt="" width="30px" class="mr-2">  Great Learning Environment</p>
+            </div>  
+            
+            <div class="item1">
+                <p> <img src="Images/home page/second.png" alt="" width="30px" class="mr-2">  Workshops For Everyone</p>
+            </div>
+
+            <div class="item1">
+                <p><img src="Images/home page/third.png" alt="" width="30px" class="mr-2">  Professional Mentors</p>
+            </div>
+
+            <div class="item1">
+                <p>  <img src="Images/home page/fourth.png" alt="" width="30px" class="mr-2">  Fun Based Learning</p>
+            </div>
+
+          </div>
+
+          <h3 class="mt-3 now-trending">Now Trending</h3>
+          <div class="wrapper mb-3 mt-1">
+            
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="Images/workshop/1-03.png" alt="img" draggable="false">
+              <img src="Images/workshop/1-02.png" alt="img" draggable="false">
+              <img src="Images/workshop/1-01.png" alt="img" draggable="false">
+              <img src="Images/five.avif" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+    </div>
+
+    <section class="section2 my-4">
+        <div class="heading d-flex">
+            <i class="fas fa-chevron-left"></i>
+            <h1>Story Telling workshop</h1>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+
+        <div class="blue-background">
+            <h3 class="text-center">6 - 12 Years old</h3>
+            <hr class="mb-4">    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cumque saepe, impedit animi incidunt blanditiis repellendus ipsum. Mollitia assumenda reiciendis voluptas, impedit enim ea vero dolorem illo maiores. Officiis, consectetur?</p>
+
+            <p>Lorem ipsum dolor,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, voluptates. sit amet consectetur adipisicing elit. Illum doloremque eos quae. Beatae, nulla quos.</p>
+            <p>Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, eum. sit amet consectetur adipisicing elit. Repellendus cum ipsa velit aperiam, tempora fugiat. Et facilis distinctio reiciendis officia!</p>
+
+           <div class="video"><video src="Images/video.mp4" width="350px" controls class="text-center"></video></div> 
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.querySelector(".carousel"),
+    firstImg = carousel.querySelectorAll("img")[0],
+    arrowIcons = document.querySelectorAll(".wrapper i");
+    
+    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+    
+    const showHideIcons = () => {
+        // showing and hiding prev/next icon according to carousel scroll left value
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+        arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+    
+    arrowIcons.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+            // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+        });
+    });
+    
+    const autoSlide = () => {
+        // if there is no image left to scroll then return from here
+        if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+    
+        positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+        let firstImgWidth = firstImg.clientWidth + 14;
+        // getting difference value that needs to add or reduce from carousel left to take middle img center
+        let valDifference = firstImgWidth - positionDiff;
+    
+        if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+            return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+        }
+        // if user is scrolling to the left
+        carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    
+    const dragStart = (e) => {
+        // updatating global variables value on mouse down event
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrollLeft = carousel.scrollLeft;
+    }
+    
+    const dragging = (e) => {
+        // scrolling images/carousel to left according to mouse pointer
+        if(!isDragStart) return;
+        e.preventDefault();
+        isDragging = true;
+        carousel.classList.add("dragging");
+        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        carousel.scrollLeft = prevScrollLeft - positionDiff;
+        showHideIcons();
+    }
+    
+    const dragStop = () => {
+        isDragStart = false;
+        carousel.classList.remove("dragging");
+    
+        if(!isDragging) return;
+        isDragging = false;
+        autoSlide();
+    }
+    
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
+    
+    document.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
+    
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+      </script>
+
+   
+</body>
+</html>
