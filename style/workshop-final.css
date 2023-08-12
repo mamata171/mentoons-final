@@ -338,3 +338,14 @@ form input{
     width: 150px;
     display: block;
 }
+
+.carousel-img{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-img img{
+    width: 280px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
