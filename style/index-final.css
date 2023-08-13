@@ -79,6 +79,8 @@ body{
 
 }
 
+
+
 .line{
     margin-left: 200px;
 }
@@ -228,7 +230,7 @@ body{
     }
 
     .right-home .line{
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
    .right-home {
@@ -248,7 +250,7 @@ body{
     }
 
     .left-home .welcome{
-        margin-left: 100px !important;
+        margin-left: 100px;
     }
 
     .right-home .btn-explore{
@@ -269,6 +271,7 @@ body{
 
     .left-home .main-img{
         width:80vw ;
+        margin-left: 50px;
     }
 
     .right-home .heading{
@@ -279,11 +282,20 @@ body{
         margin-left: 50px;
         width: 70vw;
     }
+
+    .left-home .welcome{
+        margin-left: 20vw;
+    }
 }
 
 @media screen and (max-width:650px) {
     .side-btns{
         display: none;
     }
+    
+}
+
+@media screen and (max-width:1460px) {
+    
     
 }
