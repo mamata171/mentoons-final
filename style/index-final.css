@@ -6,7 +6,7 @@ body{
 }
 
 .nav-bar {
-    margin-left: 240px !important;
+    /* margin-left: 240px !important; */
     font-size: 1.3rem;
     
 }
@@ -54,26 +54,29 @@ body{
     background-repeat: no-repeat;
     background-size:100% 100%;
     width:100vw;
-    height:90vh;
+    /* height:90vh; */
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 
 }
 
-.welcome{
-    margin-left: 200px;
-}
-
 
 .left-home .main-img{
     margin-left: 100px;
+    width: 500px;
     
 }
 
 .left-home img{
+    display: block;
     margin-top: 10px;
+}
+
+.left-home .welcome{
+    width: 300px;
+    margin-left: 200px;
+
 }
 
 .line{
@@ -84,6 +87,10 @@ body{
     margin-right: 70px;
     margin-left: 130px;
     
+}
+
+.right-home .heading{
+    width: 650px;
 }
 
 
@@ -215,3 +222,68 @@ body{
 
 }
 
+@media screen and (max-width:1458px) {
+    .flex-box-home{
+        justify-content: center;
+    }
+
+    .right-home .line{
+        margin-left: 50px;
+    }
+
+   .right-home {
+    margin-left: 30px;
+   }
+    .left-home .main-img{
+        width:40vw ;
+    }
+
+    .right-home .heading{
+        width: 40vw;
+    }
+
+    .right-home p{
+        margin-left: 50px;
+        width: 37vw;
+    }
+
+    .left-home .welcome{
+        margin-left: 100px !important;
+    }
+
+    .right-home .btn-explore{
+        margin-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width:850px) {
+    .flex-box-home{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-home .line{
+       display: none;
+    }
+
+
+    .left-home .main-img{
+        width:80vw ;
+    }
+
+    .right-home .heading{
+        width: 80vw;
+    }
+
+    .right-home p{
+        margin-left: 50px;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .side-btns{
+        display: none;
+    }
+    
+}
