@@ -81,11 +81,6 @@ body{
 }
 
 .right-home{
-    /* padding-left: 100px; */
-    /* margin-top: 20px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     margin-right: 70px;
     margin-left: 130px;
     
@@ -104,6 +99,7 @@ body{
     margin-left: 250px;
 }
 
+/*  **************** sun rotating like pendulam animation ************** */
 /* .i1{
     position: absolute;
     top: 26px;
@@ -122,8 +118,8 @@ body{
 
 .i2{
     position: absolute;
-    top: 35vh;
-    left: 630px;
+    top: 65vh;
+    left: 600px;
     
 }
 

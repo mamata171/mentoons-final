@@ -336,6 +336,14 @@ width: 100%;
     display: block;
   }
 
+  .dfs{
+    justify-content:center;
+  }
+
+  .left-dfs img{
+    border-radius: 10px;
+
+  }
   .carousel-img{
     display: flex;
     justify-content: center;
@@ -346,6 +354,13 @@ width: 100%;
     height: 250px;
     margin-left: 35px;
     border-radius: 10px;
+    margin-top: 25px;
+}
+
+.second-img{
+    margin-top: 0px !important;
+    width: 400px !important;
+    height: auto !important;
 }
 
 .team-video video{
@@ -366,3 +381,15 @@ width: 100%;
     z-index: 1;
 }
 
+.carousel-videos{
+    margin: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.carousel-videos video{
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 25px;
+    border: 3px solid white;
+}
