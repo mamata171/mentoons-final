@@ -58,6 +58,12 @@ body{
     right: 0px;
 }
 
+.bottom-wave{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
 
 
 .accordian{
@@ -155,6 +161,7 @@ body{
 /* ********** section 2 ********** */
 .section2{
     background-color: orange;
+    position: relative;
 }
 
 
@@ -306,5 +313,56 @@ width: 100%;
 
   .dfh{
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
+   
+    /* text-align: center; */
   }
+
+  .dfh .left{
+    margin-left: 200px;
+  }
+
+  .dfh .right{
+    margin-right: 200px;
+  }
+
+  .dfh .right img{
+    width: 400px;
+    /* box-shadow: 5px 5px 10px grey; */
+    border-radius: 10px;
+  }
+
+  .dfh .left a{
+    display: block;
+  }
+
+  .carousel-img{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-img img{
+    width: 350px;
+    height: 250px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+.team-video video{
+    border-radius: 15px;
+
+}
+
+.butterfly{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.baloon{
+    position: absolute;
+    right: 130px;
+    top: 380px;
+    z-index: 1;
+}
+
