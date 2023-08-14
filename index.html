@@ -201,26 +201,55 @@
         </div>
         </section>
 
+        <div class="now-trending mt-5">
+
+          <h1 class="ml-3">Now Trending </h1>
+          <div class="wrapper2">
+            <ul class="carousel2">
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+              </li>
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+              
+              </li>
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+      
+              </li>
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+               
+              </li>
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+             
+              </li>
+              <li class="card">
+                <div class="img"><img src="Images/one.avif" alt="img" draggable="false"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       <section class="section2">
             <h1 class="text-center my-3 mb-4">Meet Our Team</h1>    
               <div class="wrapper">
                   <i id="left" class="fa fa-solid fa-angle-left left"></i>
                   <div class="carousel">
-                    <img src="Images/inside/sir.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/anam.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/dhanas.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/ananya.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/ajay.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/dinesh.jpeg" alt="img" draggable="false">
+                    <img src="Images/inside/1-10.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-01.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-03.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-04.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-05.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-06.jpg" alt="img" draggable="false">
 
-                    <img src="Images/inside/rajni.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/sankar.jpeg" alt="img" draggable="false">
-                    <img src="Images/inside/mamta.jpeg" alt="img" draggable="false">
+                    <img src="Images/inside/1-07.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-08.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/1-09.jpg" alt="img" draggable="false">
                   </div>
                   <i id="right" class="fa fa-solid fa-angle-right right"></i>
                 </div>
-              
-        
 
         <div class="below-home">
           <div class="d-flex dfh my-3">
@@ -298,30 +327,30 @@
   
         </div>
      
-        <div class="section21 mt-5 pb-5">
+        <div class="section21 mt-5 pb-5 insideMentoons">
       <div class="text-head text-center pt-3 text-light">
           <h4 class="pt-3">Gallery</h4>
           <h2>Welcome to our gallery, Thank you for stopping</h2>
           <p class="pb-3">We have put together a collection of some memories during our three yeras of research</p>
       </div>
 
-      <div class="team-video text-center mt-3">
-          <video src="Images/video.mp4" width="750px" controls></video>
+      <div class="team-video text-center mt-3"> 
+          <video src="Images/video.mp4" controls></video>
         </div>
 
       <div class="carousel-img mt-4">
-          <img src="Images/girls.jpeg" alt="img" draggable="false">
-          <img src="Images/girls.jpeg" alt="img" draggable="false">
-          <!-- <img src="Images/girls.jpeg" alt="img" draggable="false"> -->
-          <img src="Images/lincy.jpeg" alt="img" draggable="false" class="">
-          <img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.26 PM.jpeg" alt="img" draggable="false">
+          <img src="Images/inside/team1.png" alt="img" draggable="false">
+          <img src="Images/inside/team3.png" alt="img" draggable="false" class="">   
+          <img src="Images/inside/team2.JPG" alt="img" draggable="false">
+          <img src="Images/inside/team4.jpeg" alt="img" draggable="false">
+          <!-- <img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.26 PM.jpeg" alt="img" draggable="false"> -->
           <!-- <img src="Images/inside/WhatsApp Image 2023-07-28 at 3.38.26 PM (1).jpeg" alt="img" draggable="false"> -->
         </div>
 
 
         <div class="carousel-videos d-flex">
-          <video src="Images/video.mp4" controls></video>
-          <video src="Images/video.mp4" controls></video>
+          <video src="Images/FunVideos/FUN_VDO_01.mp4" controls></video>
+          <video src="Images/FunVideos/FUN_VDO_AGAIN.mp4" controls></video>
           <video src="Images/video.mp4" controls></video>
           <!-- <video src="Images/video.mp4"></video> -->
         </div>
@@ -335,6 +364,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
       <script>
+        
         const carousel = document.querySelector(".carousel"),
         firstImg = carousel.querySelectorAll("img")[0],
         arrowIcons = document.querySelectorAll(".wrapper i");
@@ -356,25 +386,31 @@
                 setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
             });
         });
-        
+      
        
-        
         const autoSlide = () => {
-            // if there is no image left to scroll then return from here
-            if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-        
-            positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
-            let firstImgWidth = firstImg.clientWidth + 14;
-            // getting difference value that needs to add or reduce from carousel left to take middle img center
-            let valDifference = firstImgWidth - positionDiff;
-        
-            if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
-                return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-            }
-            // if user is scrolling to the left
-            carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-        }
-        
+          // Calculate the remaining space that can be scrolled horizontally
+          const remainingScrollSpace = carousel.scrollWidth - carousel.clientWidth - carousel.scrollLeft;
+      
+          // If there's no more space to scroll to the right or the left, return
+          if (remainingScrollSpace <= 0 || carousel.scrollLeft <= 0) return;
+      
+          // Calculate the distance to scroll
+          const distanceToScroll = Math.min(remainingScrollSpace, 200); // Adjust the value as needed
+      
+          // Calculate the new scroll position
+          const newScrollLeft = carousel.scrollLeft + distanceToScroll;
+      
+          // Scroll to the new position
+          carousel.scrollTo({
+              left: newScrollLeft,
+              behavior: 'smooth' // You can use 'auto' for instant scrolling
+          });
+      }
+      
+      // Call autoSlide function at a regular interval
+      setInterval(autoSlide, 2000); // Adjust the interval as needed
+      
         const dragStart = (e) => {
             // updatating global variables value on mouse down event
             isDragStart = true;
@@ -410,7 +446,110 @@
         
         document.addEventListener("mouseup", dragStop);
         carousel.addEventListener("touchend", dragStop);
+
+
+       // ******************** now trending ********************
+        const wrapper2 = document.querySelector(".wrapper2");
+const carousel2 = document.querySelector(".carousel2");
+const firstCardWidth = carousel2.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper2 i");
+const carousel2Childrens = [...carousel2.children];
+
+let isDragging2 = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+// Get the number of cards that can fit in the carousel2 at once
+let cardPerView = Math.round(carousel2.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to beginning of carousel2 for infinite scrolling
+carousel2Childrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel2.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// Insert copies of the first few cards to end of carousel2 for infinite scrolling
+carousel2Childrens.slice(0, cardPerView).forEach(card => {
+    carousel2.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// Scroll the carousel2 at appropriate postition to hide first few duplicate cards on Firefox
+carousel2.classList.add("no-transition");
+carousel2.scrollLeft = carousel2.offsetWidth;
+carousel2.classList.remove("no-transition");
+
+// Add event listeners for the arrow buttons to scroll the carousel2 left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel2.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
+
+const dragStart2 = (e) => {
+    isDragging2 = true;
+    carousel2.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel2
+    startX = e.pageX;
+    startScrollLeft = carousel2.scrollLeft;
+}
+
+const dragging2 = (e) => {
+    if(!isDragging2) return; // if isDragging2 is false return from here
+    // Updates the scroll position of the carousel2 based on the cursor movement
+    carousel2.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop2 = () => {
+    isDragging2 = false;
+    carousel2.classList.remove("dragging");
+}
+
+const infiniteScroll = () => {
+    // If the carousel2 is at the beginning, scroll to the end
+    if(carousel2.scrollLeft === 0) {
+        carousel2.classList.add("no-transition");
+        carousel2.scrollLeft = carousel2.scrollWidth - (2 * carousel2.offsetWidth);
+        carousel2.classList.remove("no-transition");
+    }
+    // If the carousel2 is at the end, scroll to the beginning
+    else if(Math.ceil(carousel2.scrollLeft) === carousel2.scrollWidth - carousel2.offsetWidth) {
+        carousel2.classList.add("no-transition");
+        carousel2.scrollLeft = carousel2.offsetWidth;
+        carousel2.classList.remove("no-transition");
+    }
+
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel2
+    clearTimeout(timeoutId);
+    if(!wrapper2.matches(":hover")) autoPlay();
+}
+
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel2 after every 2500 ms
+    timeoutId = setTimeout(() => carousel2.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+
+carousel2.addEventListener("mousedown", dragStart2);
+carousel2.addEventListener("mousemove", dragging2);
+document.addEventListener("mouseup", dragStop2);
+carousel2.addEventListener("scroll", infiniteScroll);
+wrapper2.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper2.addEventListener("mouseleave", autoPlay);
     
       </script>
 </body>
 </html>
+
+<!-- const autoSlide = () => {
+  // if there is no image left to scroll then return from here
+  if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+  positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+  let firstImgWidth = firstImg.clientWidth + 14;
+  // getting difference value that needs to add or reduce from carousel left to take middle img center
+  let valDifference = firstImgWidth - positionDiff;
+
+  if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+      return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  }
+  // if user is scrolling to the left
+  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+} -->

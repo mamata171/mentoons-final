@@ -6,7 +6,7 @@ body{
 }
 
 .nav-bar {
-    margin-left: 240px !important;
+    /* margin-left: 240px !important; */
     font-size: 1.3rem;
     
 }
@@ -15,7 +15,7 @@ body{
 }
 .home{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .navbar{
@@ -35,7 +35,7 @@ body{
     border: 3px solid white;
     box-shadow: 4px 4px 8px rgb(0, 0, 0);
     margin-right: 100px;
-}
+} 
 
 .benifit-bar{
     background-color: rgb(248, 213, 36);
@@ -210,7 +210,7 @@ body{
 
 .wrapper{
 display: flex;
-max-width: 1200px;
+/* max-width: 1200px; */
 position: relative;
 margin:auto;
 }
@@ -257,7 +257,7 @@ scroll-behavior: auto;
 pointer-events: none;
 }
 .carousel img{
-height: 400px;
+height: 550px;
 object-fit: cover;
 user-select: none;
 margin-left: 25px;
@@ -346,6 +346,7 @@ width: 100%;
   }
   .carousel-img{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -365,6 +366,7 @@ width: 100%;
 
 .team-video video{
     border-radius: 15px;
+    width: 750px;
 
 }
 
@@ -385,6 +387,7 @@ width: 100%;
     margin: 20px;
     justify-content: center;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .carousel-videos video{
@@ -397,4 +400,18 @@ width: 100%;
 .section21{
   background-color: orange;
   position: relative;
+}
+
+@media screen and (max-width:800px) {
+  .team-video video{
+    width: 85vw;
+  }
+  
+}
+
+@media screen and (max-width:1050px) {
+
+  .wrapper i:last-child{
+  right: 0px;
+}
 }
