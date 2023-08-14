@@ -87,7 +87,7 @@ body{
 
 .right-home{
     margin-right: 70px;
-    margin-left: 130px;
+    margin-left: 150px;
     
 }
 
@@ -373,4 +373,9 @@ body{
   .wrapper2 .carousel2 {
     grid-auto-columns: 100%;
   }
+}
+
+.section2{
+    /* padding: 50px; */
+    height: 100vh;
 }
