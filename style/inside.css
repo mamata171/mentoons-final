@@ -159,10 +159,10 @@ body{
 }
 
 /* ********** section 2 ********** */
-.section2{
+/* .section2{
     background-color: orange;
     position: relative;
-}
+} */
 
 
 
@@ -392,4 +392,9 @@ width: 100%;
     border-radius: 20px;
     margin-left: 25px;
     border: 3px solid white;
+}
+
+.section21{
+  background-color: orange;
+  position: relative;
 }

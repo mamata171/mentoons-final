@@ -17,3 +17,6 @@ function sidebarcontent() {
       element1.style.display = "none";
     
   }
+
+
+    
