@@ -288,12 +288,7 @@ body{
     }
 }
 
-@media screen and (max-width:650px) {
-    .side-btns{
-        display: none;
-    }
-    
-}
+
 
 /* **************** Now Trending carousel ****************** */
 
