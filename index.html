@@ -175,9 +175,9 @@
                   </div>
               </div>
 
-          <img src="Images/inside/baloon2.png" alt="" width="250px" class="i2">
+          <!-- <img src="Images/inside/baloon2.png" alt="" width="250px" class="i2">
           <img src="Images/home page/Asset 1.png" alt="" width="150px" class="i3">
-          <img src="Images/home page/Asset 3.png" alt="" width="170px" class="i4">
+          <img src="Images/home page/Asset 3.png" alt="" width="170px" class="i4"> -->
 
           <div class="side-btns">
 
@@ -185,8 +185,8 @@
               <button class="side-btn mt" onclick="sidebarcontent()">mt</button>
                 <div class="content c1" id="hidden">
                     <div class="small-flex"><h4>About us</h4><button onclick="close_sidebar()"> <i class="fa fa-close"></i></button></div>   
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam, hic exercitationem obcaecati suscipit voluptatibus.
-                    <button class="btn btn-primary explore-small">Explore</button>
+                    Mentoons is a forward-thinking company dedicated to mentoring through the power of cartoons. We believe in the expressive and transformative power of visual storytelling, and we aim to use this power to make mentorship more relatable, engaging, and effective.
+                     <!-- <button class="btn btn-primary explore-small">Explore</button> -->
                 </div>
             </div> 
 
@@ -521,11 +521,9 @@ const infiniteScroll = () => {
 
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel2 after every 2500 ms
     timeoutId = setTimeout(() => carousel2.scrollLeft += firstCardWidth, 2500);
-}
+ }
 autoPlay();
-
 carousel2.addEventListener("mousedown", dragStart2);
 carousel2.addEventListener("mousemove", dragging2);
 document.addEventListener("mouseup", dragStop2);
