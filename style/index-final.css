@@ -4,7 +4,9 @@ body{
     padding: 0px;
     box-sizing: border-box;
 }
-
+h1{
+    font-family: 'Libre Baskerville', serif;
+}
 .nav-bar {
     /* margin-left: 240px !important; */
     font-size: 1.3rem;
@@ -344,7 +346,7 @@ body{
 }
 .card .img img {
   width: 350px;
-  height:200px;
+  height:300px;
   object-fit: cover;
   border: 4px solid #fff;
 }
@@ -373,4 +375,118 @@ body{
 .section2{
     /* padding: 50px; */
     height: 100vh;
+}
+
+/* ****************************** Workshops ****************** */
+.workshops{
+    margin-top: 50px;
+}
+
+.flex-workshops0{
+        justify-content: space-evenly;
+}
+
+.left-workshop{
+    width: 40vw;
+}
+
+.right-workshop video{
+    width: 370px;
+    border-radius: 10px;
+    border: 8px solid #0f8add;
+}
+
+.workshops h1{
+    font-size: 3rem;
+    color: orange;
+    text-transform: uppercase;
+    /* margin-left: 15vw; */
+   /* text-shadow: 4px 4px 8px rgb(255, 207, 119); */
+}
+.flex-workshops{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.workshop-box{
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.workshop-box img{
+    width: 300px;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+    /* border: 4px solid orange; */
+    margin-bottom: 10px;
+}
+
+.b2 img{
+    width: 300px;
+}
+
+.workshop-box img:hover{
+    border: 8px solid orange;
+}
+
+@media screen and (max-width:850px) {
+    .flex-workshops0{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+
+.left-workshop{
+    width: 80vw;
+}
+
+}
+
+.content1{
+    margin-right: 100px;
+}
+
+.content2{
+    margin-left: 100px;
+}
+
+.age-workshops .d-flex{
+    justify-content: center;
+}
+
+.content1,.content2{
+    width: 40vw;
+}
+
+.content2 h1{
+    font-size: 1.5rem;
+}
+
+.left-age-workshop h1{
+    font-size: 1.5rem;
+    color: orange;
+    text-transform: uppercase;
+
+}
+
+.video-workshop video{
+    width: 370px;
+    border-radius: 10px;
+    border: 5px solid #0f8add;
+}
+
+.age-workshops .d-flex{
+    flex-wrap: wrap;
+}
+
+@media  screen and (max-width:784px) {
+    .content1,.content2{
+        width: 80vw;
+    }
+
+    .age-workshops .d-flex2{
+        flex-direction: column-reverse !important;
+    }
+    
 }
