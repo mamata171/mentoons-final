@@ -443,4 +443,38 @@ width: 100%;
     }
 }
 
+@media screen and (max-width:900px) {
+  .carousel-img img{
+    width: 80vw;
+}
+}
 
+
+@media screen and (max-width:500px) {
+  
+.carousel-img img{
+  width: 90vw;
+  margin-left: 0px;
+ 
+}
+
+.carousel-videos video{
+  width: 90vw;
+  margin-left: 0px;
+  margin-top: 10px;
+ 
+}
+
+}
+@media screen and (max-width:1315px) {
+  .carousel-videos video{
+   margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:890px) {
+  .car-vid2{
+    display: none;
+  }
+  
+}
