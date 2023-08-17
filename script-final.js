@@ -1,4 +1,9 @@
+time_elm = document.getElementById("current-time")
 
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+document.getElementById("current-time").innerText = time;
 
 function sidebarcontent() {
     var element1 = document.getElementById("hidden");

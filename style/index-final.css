@@ -7,9 +7,18 @@ body{
 h1{
     font-family: 'Libre Baskerville', serif;
 }
+
+#current-time{
+   background-color: rgb(240, 28, 95);
+   padding: 6px 13px;
+   border-radius: 10px;
+    margin-left: 27vw;
+    
+}
 .nav-bar {
     /* margin-left: 240px !important; */
     font-size: 1.3rem;
+    /* margin-left: 70vw; */
     
 }
 .nav-item{
@@ -27,6 +36,10 @@ h1{
     width: 100%;
 }
 
+.nav-bar form button{
+    position: absolute;
+    right: 0px;
+}
 
 .join-us-btn{
     background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
@@ -480,13 +493,60 @@ h1{
     flex-wrap: wrap;
 }
 
+
 @media  screen and (max-width:784px) {
     .content1,.content2{
         width: 80vw;
     }
 
     .age-workshops .d-flex2{
-        flex-direction: column-reverse !important;
+        flex-wrap: wrap-reverse;
     }
+
+   /* .d-flex{
+    margin: auto;
+   } */
+
+   .d-flex2{
+    width: 80vw;
+   }
+
+   .content2{
+    margin-left: 20px;
+   }
+
+   .video-workshop{
+    margin-top: 10px;
+   }
+
+
     
+
 }
+
+
+
+@media  screen and (max-width:993px) {
+    
+    #current-time{
+        margin-left: 25vw;
+    }
+}
+
+@media  screen and (max-width:1360px) {
+    
+    #current-time{
+        margin-left: -200px;
+    }
+}
+
+@media screen and (max-width: 1360px) and (min-width: 990px) {
+    #current-time {
+        margin-left: 20vw;
+    }
+}
+
+
+
+
+
