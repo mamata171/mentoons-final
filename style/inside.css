@@ -328,6 +328,24 @@ width: 100%;
     position: absolute;
     top: 50px;
     left: 100px;
+    z-index: 1;
+    width: 200px;
+}
+
+@media screen and (max-width:1378px) {
+
+  .butterfly{
+    top: 50px;
+    left: 4vw;
+    width: 150px;
+    z-index: 1;
+}
+}
+
+@media screen and (max-width:987px) {
+  .butterfly{
+    display: none;
+  }
 }
 
 .baloon{
@@ -335,6 +353,14 @@ width: 100%;
     right: 130px;
     top: 380px;
     z-index: 1;
+}
+
+@media screen and (max-width:1219px) {
+  .baloon{
+    display: none;
+
+  }
+
 }
 
 .carousel-videos{

@@ -1,9 +1,12 @@
 time_elm = document.getElementById("current-time")
 
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+// var today = new Date();
+// var time = today.getDay() + ":" + today.getMonth() + ":" + today.getFullYear();
 
-document.getElementById("current-time").innerText = time;
+// document.getElementById("current-time").innerText = time;
+
+var dt = new Date();
+document.getElementById("current-time").innerHTML = dt.toLocaleDateString();
 
 function sidebarcontent() {
     var element1 = document.getElementById("hidden");
