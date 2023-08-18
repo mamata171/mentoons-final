@@ -243,6 +243,13 @@ h1{
     left: 64vw !important;
 }
 }
+
+@media screen and (max-width: 550px){
+.right-home p {
+  
+    margin: auto !important;
+}
+}
 .i4{
     position: absolute;
     top: 155px;
