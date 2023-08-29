@@ -49,6 +49,101 @@
         }
       </style>  -->
 
+      <style>
+        .accordian-final{
+          margin-left: 100px ;
+          width: 500px;
+      }
+      
+      .accordian-final li{
+          list-style: none;
+          width: 100%;
+          margin: 0px;
+          padding: 10px 10px;
+          /* border: 2px solid black; */
+          margin-bottom: 10px;
+          background-color: rgb(245, 245, 245);
+          box-shadow: 5px 5px 8px rgb(173, 173, 173);
+          border-radius: 10px;
+      
+      }
+      
+      .accordian-final li label{
+          display: flex;
+          align-items: center;
+         letter-spacing: 1.2px;
+          font-size: 1.3vw;
+          font-weight: 500;
+          cursor: pointer;
+          font-stretch:ultra-expanded;
+          font-weight: 600;
+      }
+      .accordian-final label::before{
+          content: '+';
+          margin-right: 15px;
+      
+          width: 30px;
+          height: 30px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 200;
+          color: #000000;
+          font-stretch:ultra-expanded;
+      
+          border-radius: 50%;
+          outline: 2px solid #000000;
+          transition-property:
+              outline-offset, outline-color,
+              background-color;
+          /* transition-duration: .25s;   */
+         
+      }
+      
+      .accordian-final label:hover::before {
+          background-color: #000000;
+          color: aliceblue;
+      }
+      
+      .accordian-final input[type="checkbox"]{
+          display: none;
+      }
+      
+      .accordian-final .content-final{
+          color: #555;
+          width: 400px;
+          margin-left: 30px;
+         padding: 0 10px; 
+         line-height: 16px;
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.5s,padding 0.5s;
+      
+      }
+      
+      .accordian-final input[type="checkbox"]:checked + label + .content-final{
+          max-height: 400px;
+          padding: 0px 10px;
+          
+      
+      }
+      .accordian-final input[type="checkbox"]:checked+.content-final{
+          background-color: #ffffff;
+      }
+      .accordian-final input[type="checkbox"]:checked + label::before{
+          content: "-";
+          
+      }
+      
+      .content-final p{
+          border-left: 3px solid rgb(240, 24, 208);
+          padding: 3px 6px;
+      
+      }
+      </style>
+
       <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
           var loading = document.getElementById("loading");
@@ -94,10 +189,13 @@
             
             <h3 id="current-time"></h3> 
             <div class="nav-bar" id="navbarSupportedContent">
-              
+              <div class="nav-items">
+              <a href="log-in.html"><button class="btn my-2 my-sm-0 join-us-btn2" type="submit"> Login</button></a>  
+              <a href="sign-up.html"><button class="btn my-2 my-sm-0  join-us-btn2" type="submit"> Sign Up</button></a>  
+            </div>
               <!-- -->
-              <form class="form-inline my-2 my-lg-0 flex-fill">
-                <button class="btn my-2 my-sm-0 join-us-btn" type="submit" onclick="window.location.href = 'tel:+918310728642';"> <i class="fa fa-phone"></i></button>
+              <form class="form-inline my-0 my-lg-0 flex-fill">
+                <!-- <button class="btn my-2 mt-0 my-sm-0 join-us-btn" type="submit" onclick="window.location.href = 'tel:+918310728642';"> <i class="fa fa-phone"></i></button> -->
               </form>
             </div>
           </nav>
@@ -173,9 +271,10 @@
           <h1 class="ml-3">Now Trending </h1>
           <div class="wrapper2">
             <ul class="carousel2">
+             <a href="Images/videos/career_fraudstart.mp4">
               <li class="card">
                 <div class="img"><img src="Images/workshop/1-01.png" alt="img" draggable="false"></div>
-              </li>
+              </li></a> 
               <li class="card">
                 <div class="img"><img src="Images/workshop/stop-10.png" alt="img" draggable="false"></div>
               
@@ -192,9 +291,9 @@
                 <div class="img"><img src="Images/workshop-posters/hasya-six.jpg" alt="img" draggable="false"></div>
              
               </li>
-              <li class="card">
+              <!-- <li class="card">
                 <div class="img"><img src="Images/workshop/stop-10.png" alt="img" draggable="false"></div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -206,6 +305,7 @@
                   <h1>Workshops</h1>
                   <p>Dive deep into the world of our unique workshops, tailored to bridge the gap between the ancient values and the digital world. We believe in striking a balance between honoring traditions and adapting with modern times.</p>
                   <p>Our sessions are filled with engaging activities that masterfully blend the essence of Ancient Wisdom with the perks of Modern Technology.</p>
+                  <a href="schedule.html"><button class="btn btn-success">Schedule Call</button></a>
               </div>
 
               <div class="right-workshop">
@@ -221,7 +321,7 @@
               </div>
 
               <div class="workshop-box b2">
-              <a href="artworkshop.html"> <img src="Images/workshop-posters/kala.jpg" alt=""></a> 
+              <a href="art.html"> <img src="Images/workshop-posters/kala.jpg" alt=""></a> 
                 <h4>Art and Paint Workshop</h4>
             </div>
 
@@ -278,15 +378,18 @@
         </section>
 
       <section class="section2">
-            <h1 class="text-center mt-5 mb-3">Meet Our Team</h1>    
+        <h1 class="text-center mt-5 mb-2">Inside Mentoons</h1>    
+
+            <!-- <h3 class="text-center mt-2 mb-3">Meet Our Team</h3>     -->
               <div class="wrapper mb-5">
                   <i id="left" class="fa fa-solid fa-angle-left left"></i>
                   <div class="carousel">
                     <img src="Images/inside/sir.jpg" alt="img" draggable="false">
-                    <img src="Images/inside/dinesh.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/anam.jpg" alt="img" draggable="false">
                     <img src="Images/inside/Mamata.jpg" alt="img" draggable="false">
                     <img src="Images/inside/jeenashree.jpg" alt="img" draggable="false">
-                    <img src="Images/inside/anam.jpg" alt="img" draggable="false">
+                    <img src="Images/inside/dinesh.jpg" alt="img" draggable="false">
+
                     <img src="Images/inside/Ajay.jpg" alt="img" draggable="false">
                     <img src="Images/inside/dana.jpg" alt="img" draggable="false">
                     <img src="Images/inside/sankar.jpg" alt="img" draggable="false">
@@ -318,19 +421,75 @@
   
               
               <div class="d-flex dfs mt-5">
-                  <div class="left-dfs">
+                  <!-- <div class="left-dfs">
                       <img src="Images/inside/Screenshot 2023-08-13 110852.png" alt="" class="dfs-left-img">
-                  </div>
+                  </div> -->
   
-                  <div class="right-dfs mt-4">
-                    <ul>
+                  <!-- <div class="right-dfs mt-4"> -->
+                    <!-- <ul>
                       <li><a href="hiring_page.html"><i class="fa fa-solid fa-check mx-2"></i>Hiring Anchors</a></li>
                       <li><a href="hiring_page.html"><i class="fa fa-solid fa-check mx-2"></i>Hiring Musician</a></li>
                       <li><a href="hiring_page.html"><i class="fa fa-solid fa-check mx-2"></i>Hiring Psycology Graduates</a></li>
                       <li><a href="hiring_page.html"><i class="fa fa-solid fa-check mx-2"></i>Hiring Theater Artists</a></li>
                       <li><a href="hiring_page.html"><i class="fa fa-solid fa-check mx-2"></i>Hiring Story Teller</a></li>
-                    </ul>
-                </div>
+                    </ul> -->
+                    <!-- <div class="d-flex dfs mt-5"> -->
+                      <div class="left-dfs">
+                          <img src="Images/inside/Screenshot 2023-08-13 110852.png" alt="" width="350px" height="400px">
+                      </div>
+      
+                      <div class="right-dfs mt-3">
+                        <ul class="accordian-final">
+
+                          <li>
+                              <input type="checkbox" name = "accordian" id="first">
+                              <label for="first">Hiring Anchors</label>
+                              <div class="content-final">
+                                  <p>Lorem citationem,accusantium dolorum minima! Atque, earum incidunt harum molestiae ea, asperiores iusto </p>
+                                <a href="hiring_page.html">  <img src="Images/inside/submit.png" alt="" width="100px"></a>
+                              </div>
+                          </li>
+                  
+                          <li>
+                              <input type="checkbox" name = "accordian" id="second">
+                              <label for="second">Hiring Musicians</label>
+                              <div class="content-final">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem, fuga saepe aperiam magni harum? Repudiandae </p>
+                                <a href="hiring_page.html">  <img src="Images/inside/submit.png" alt="" width="100px"></a>
+                          
+                              </div>
+                          </li>
+                  
+                          <li>
+                              <input type="checkbox" name = "accordian" id="third">
+                              <label for="third">Hirirng Psycology Graduates</label>
+                              <div class="content-final">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  distinctio accusantium do</p>
+                                <a href="hiring_page.html">  <img src="Images/inside/submit.png" alt="" width="100px"></a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <input type="checkbox" name = "accordian" id="fourth">
+                              <label for="fourth">Hirirng Theater Artists</label>
+                              <div class="content-final">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  distinctio accusantium do</p>
+                                  <a href="hiring_page.html">  <img src="Images/inside/submit.png" alt="" width="100px"></a>
+                              </div>
+                          </li>
+          
+                          <li>
+                              <input type="checkbox" name = "accordian" id="fifth">
+                              <label for="fifth">Hirirng Story Teller</label>
+                              <div class="content-final">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  distinctio accusantium do</p>
+                                  <a href="hiring_page.html">  <img src="Images/inside/submit.png" alt="" width="100px"></a>
+                              </div>
+                          </li>
+                      </ul>
+                      </div>
+                  </div>
+                  </div>
               </div>
   
         </div>

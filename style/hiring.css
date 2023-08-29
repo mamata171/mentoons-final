@@ -55,6 +55,10 @@ body{
     
 }
 
+.big-img{
+    width: 400px !important;
+}
+
 
 .right-side{
     width: 500px;
