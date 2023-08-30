@@ -1,0 +1,63 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-box{
+    width: 60vw;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px grey;
+    
+
+}
+
+.heading{
+    padding: 20px;
+    padding-right: 40px;
+    background: linear-gradient(#f6921e,#ee4036);
+}
+
+.right{
+    background: url("../Images/subcription-03.png");
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+.input-div{
+    background: linear-gradient(#f6921e,#ee4036);
+    border-radius: 20px;
+    margin: auto;
+    margin: 15px 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 80%;
+
+}
+
+.input-div input{
+    border: none;
+    outline: none;
+    background: linear-gradient(#f6921e,#ee4036);
+    color: white;
+    margin-left: 15px;
+}
+
+.checkbox-div{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+   margin-left: 20px;
+}
+
+.checkbox-div input{
+    width: 38px;
+}
+
+.checkbox-div p{
+    margin-left: 15px;
+}
