@@ -701,7 +701,7 @@ h1{
 
 .nav-right a{
     text-decoration: none;
-    
+
 }
 
 @media screen and (max-width:992px) {
@@ -710,4 +710,8 @@ h1{
         position: relative;
    margin-left: 100px;
     }
+
+
+
 }
+
