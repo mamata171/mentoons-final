@@ -4,6 +4,21 @@ body{
     padding: 0px;
     box-sizing: border-box;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color:#52b2cf !important ;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+
 h1{
     font-family: 'Libre Baskerville', serif;
 }
@@ -37,7 +52,7 @@ h1{
 }
 
 .navbar{
-    background-color:#52b2cf !important ;
+    
     color: white !important;
     /* position:fixed; */
     width: 100%;
@@ -674,3 +689,28 @@ h1{
     }
     
 }
+
+@media screen and (max-width:900px) {
+    .accordian-final{
+        margin-left: 40px !important;
+        width: 400px !important;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    
+}
+
+@media screen and (max-width:764px) {
+    .left-dfs img{
+        display: none;
+    }
+
+    .accordian-final li{
+    margin-bottom: 10px !important;
+    } 
+    
+}
+
