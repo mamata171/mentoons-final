@@ -12,11 +12,6 @@ nav{
     background-color:#52b2cf !important ;
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    
-}
 
 
 h1{
@@ -37,31 +32,13 @@ h1{
     }
     
 }
-.nav-bar {
-    /* margin-left: 240px !important; */
-    font-size: 1.3rem;
-    /* margin-left: 70vw; */
-    
-}
-.nav-item{
-    margin-left: 20px !important;
-}
+
 .home{
     width: 100vw;
     /* height: 100vh; */
 }
 
-.navbar{
-    
-    color: white !important;
-    /* position:fixed; */
-    width: 100%;
-}
 
-.nav-bar form button{
-    position: absolute;
-    right: 0px;
-}
 
 .join-us-btn{
     background:linear-gradient(rgb(232, 167, 167), rgba(225, 76, 101),rgb(240, 28, 95));
@@ -654,7 +631,7 @@ h1{
 }
 
 
-
+/* 
 @media  screen and (max-width:993px) {
     
     #current-time{
@@ -667,13 +644,13 @@ h1{
     #current-time{
         margin-left: -200px;
     }
-}
+} */
 
-@media screen and (max-width: 1360px) and (min-width: 990px) {
+/* @media screen and (max-width: 1360px) and (min-width: 990px) {
     #current-time {
         margin-left: 20vw;
     }
-}
+} */
 
 
 @media screen and (max-width:768px) {
@@ -714,3 +691,18 @@ h1{
     
 }
 
+
+.nav-right{
+    position: absolute;
+    right: 50px;
+    margin-top: 7px;
+    
+}
+
+@media screen and (max-width:992px) {
+
+    .nav-right{
+        position: relative;
+   margin-left: 100px;
+    }
+}
