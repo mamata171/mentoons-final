@@ -6,7 +6,7 @@ time_elm = document.getElementById("current-time")
 // document.getElementById("current-time").innerText = time;
 
 var dt = new Date();
-document.getElementById("current-time").innerHTML = dt.toLocaleDateString();
+// document.getElementById("current-time").innerHTML = dt.toLocaleDateString();
 
 function sidebarcontent() {
     var element1 = document.getElementById("hidden");
