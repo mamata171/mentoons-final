@@ -1,0 +1,136 @@
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+.main-footer {
+    background: url("../Images/footer\ png/background.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.flex-box-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box2{
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 4px 4px 8px grey;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.box2 p{
+    width: 280px;
+ 
+}
+.box4 p{
+    width: 300px;
+}
+
+.box4 input{
+    padding: 6px;
+    border: none;
+    box-shadow: 3px 3px 6px grey;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box3{
+    position: relative;
+}
+.box3 a{
+    position: absolute;
+    bottom: 20px;
+}
+
+.icons i{
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 20px;
+   
+}
+
+.box1 span{
+    margin-left: 10px;
+    color: black;
+}
+
+.second-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* position: absolute;
+    top: 17vw; */
+
+}
+
+.icons-social-media img{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.enquiry{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    box-shadow: 3px 3px 6px grey;
+    border-radius: 15px;
+}
+
+.enquiry input{
+    border: 1px solid grey;
+    border-radius: 15px;
+
+}
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.main-img{
+    position: absolute;
+    top: 23vw;
+    left: 30vw;
+    
+}
+
+.third-flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-flex-footer img{
+    position: absolute;
+    bottom: 10px;
+
+}
+.img-first{
+    left: 200px;
+}
+.img-last{
+    right: 200px;
+}
