@@ -715,3 +715,23 @@ h1{
 
 }
 
+@media screen and (max-width:500px){
+    .nav-right{
+        display:none !important;
+    }
+
+    .navbar-toggler{
+        display: none !important;
+    }
+
+    .accordian-final {
+        margin-left: 0px !important;
+       width: auto !important;
+    }
+
+    .right-dfs ul li {
+       margin: 0px !important;
+       margin-top: 10px !important;
+    }
+}
+
